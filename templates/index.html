@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            My First ML Web App!
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <style>
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                 -webkit-appearance: none;
+                        margin: 0;
+            }
+        </style>
+    </head>
+   <body>
+    <div class="card text-center" style="margin: 20px 35% 20px;">
+        <div class="card-body">
+            <h1 style="color: orangered;">Palindrome Checker</h1>
+                
+        </div>
+      </div>
+      
+    <div class="card text-center" style="width: 80%; margin: 100px auto 100px;">
+            
+        <div class="card-header">
+                <strong>Input a number to check if palindrome or not: </strong>
+            </div>
+        
+            
+            <div class="card-body">
+                <form  action = "/submit" method = "get" style="margin: 10px 30% 10px;">
+                    <p style="text-align: justify;">
+                        Enter Number: <input type="number" step="0.01" class="form-control" name = "N1" /></br>
+                    </p>
+                    <p><input type = "submit" style="background-color: limegreen;"class="btn btn-primary mb-2" value = "Check" /></p>    
+            </div>
+
+            <div class="card-footer text-muted">
+                <h2 style="margin: 10px 30% 10px;color: orangered;">Result: {{result}}</h3>
+            </div>
+            <a href="/about" style="background-color: orangered;"class="btn btn-primary">About Palindrome</a> 
+
+      </div>
+       
+      
+    
+</body>
+</html>
